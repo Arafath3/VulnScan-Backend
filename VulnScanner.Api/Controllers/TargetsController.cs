@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;                    // Async query helpers
 using VulnScanner.Api.Data;                             // AppDbContext
 using VulnScanner.Api.Models;                           // Target model
 
+
 namespace VulnScanner.Api.Controllers;                  // Namespace for controllers
 
 [ApiController]                                         // Enables API behaviors (binding, validation)
@@ -47,3 +48,4 @@ public sealed class TargetsController : ControllerBase   // Base class with Ok()
         return Ok(items);                                // Return list as JSON
     }
 }
+
